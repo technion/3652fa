@@ -13,8 +13,8 @@ var pollserver = function (url) {
         else {
             // Credentials detected - submitting form
             console.log(JSON.stringify(data));
-            document.getElementById("cred_password_inputtext").value =
-                data["passwd"];
+            document.getElementById("cred_password_inputtext")
+                .value = data.passwd;
             document.getElementById("credentials").submit();
         }
     })["catch"](function (err) {

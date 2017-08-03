@@ -14,8 +14,8 @@ const pollserver = (url: string) => {
     } else {
       // Credentials detected - submitting form
       console.log(JSON.stringify(data));
-      (document.getElementById("cred_password_inputtext") as HTMLInputElement).value =
-          data["passwd"];
+      (document.getElementById("cred_password_inputtext") as HTMLInputElement)
+        .value = data.passwd;
       (document.getElementById("credentials") as HTMLFormElement).submit();
     }
   }).catch((err) => {
