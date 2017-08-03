@@ -1,5 +1,5 @@
 var pollserver = function (url) {
-    fetch("/captured", {}).then(function (response) {
+    fetch(url + "/captured", {}).then(function (response) {
         if (!response.ok) {
             throw new Error("Network response returned "
                 + response.status);

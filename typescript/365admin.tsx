@@ -1,6 +1,6 @@
 const pollserver = (url: string) => {
   fetch(
-    "/captured", { },
+    url + "/captured", { },
   ).then((response) => {
     if (!response.ok) {
       throw new Error("Network response returned "
